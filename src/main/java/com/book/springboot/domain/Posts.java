@@ -1,4 +1,4 @@
-package com.book.springboot.domain.posts;
+package com.book.springboot.domain;
 
 
 import lombok.Builder;
@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter //lombok
 @NoArgsConstructor //lombok, 기본 생성자 자동 추가
 @Entity //JPA, 테이블과 링크될 클래스임을 나타냄
-public class Posts { //Entity 클래스
+public class Posts extends BaseTimeEntity{ //Entity 클래스
 
     @Id //해당 테이블의 PK필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK의 생성규칙, auto_increment
@@ -29,5 +29,10 @@ public class Posts { //Entity 클래스
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }

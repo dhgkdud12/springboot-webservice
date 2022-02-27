@@ -32,7 +32,7 @@ dependencies { //프로젝트 개발에 필요한 의존성 선언
 
     //(3)
     implementation('org.springframework.boot:spring-boot-starter-web')
-    implementation('org.springframework.boot:spring-boot-starter-mustache')
+    implementation('org.springframework.boot:spring-boot-starter-mustache') //머스테치
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
 

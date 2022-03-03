@@ -1,5 +1,6 @@
-package com.book.springboot.domain;
+package com.book.springboot.domain.posts;
 
+import com.book.springboot.domain.posts.Posts;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;

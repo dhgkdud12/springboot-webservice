@@ -47,6 +47,12 @@ dependencies { //프로젝트 개발에 필요한 의존성 선언
     implementation('org.springframework.boot:spring-boot-starter-data-jpa') //jpa
     implementation("org.mariadb.jdbc:mariadb-java-client")
     implementation('com.h2database:h2') //h2
+
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client') // 소셜 로그인 등 클라이언트 입장에서 소셜 기능 구현 시 필요한 의존성
+    implementation('org.springframework.session:spring-session-jdbc') // spring-session-jdbc
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation("org.springframework.security:spring-security-test") // 권한 관련
 }
 
 // for Junit 5
